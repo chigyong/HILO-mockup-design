@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock up Website</title>
+    <link rel= "stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="overlay" id="overlay">
+        <h3>Searching now ....</h3>
+    </div>
+
+
+    <div class="hero-bg">
+        <section class="top">
+            <header>
+                <a href="#">HILO</a>
+              </header>
+
+              <h1><span>The Immersive</span> Typing Experience </h1>
+
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore rem 
+                ad dolorem nostrum optio quo laboriosam obcaecati, minima qui? 
+                Modi optio possimus veritatis quasi velit hic, suscipit assumenda 
+                harum itaque.</p>
+
+              <div class="form-container">
+                <form action="">
+                    <div class="form-left">
+                        <label for="city">Enter your Desired Switch:</label>
+                        <input type="text" name="city" id="city">
+                        <p>Example: "Cherry MX"</p>
+                    </div>
+    
+                    <input type="button" value="Find Parts Now" id="cta-btn">
+                </form>
+            </div>
+        </section>
+       
+    </div>
+
+        <section class="authentic">
+            <div class="right-col">
+                <h2>Authentic, Awesome.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quidem molestias dolor ea deserunt est vitae consectetur vero quos. Perspiciatis similique libero fugit ullam numquam quia saepe temporibus recusandae quam?</p>
+
+            </div>
+            <img src="images/keyboard.jpg" alt="Picture of a Keyboard">
+        </section>
+
+        <script>
+
+            let btn = document.getElementById('cta-btn');
+            let overlay = document.getElementById('overlay');
+            
+            btn.addEventListener('click', () => {
+                overlay.style.display = 'grid';
+                overlay.classList.add('animate-overlay');
+            })
+
+        </script>
+
+    <footer>This is a sample design</footer>
+</body>
+</html> 
